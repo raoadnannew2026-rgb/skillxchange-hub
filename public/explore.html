@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore — Skill Exchange Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="explore">
+<header id="nav"></header>
+<main>
+<h1>Explore Members</h1>
+<input id="q" placeholder="Search by name or skill (e.g. Python)">
+<div id="results" class="grid"></div>
+<dialog id="dlg">
+  <h3>Exchange with <span id="dName"></span></h3>
+  <label>I will teach</label><select id="give"></select>
+  <label>I want to learn</label><select id="get"></select>
+  <label>Message (optional)</label><textarea id="dmsg" rows="3"></textarea>
+  <div id="dErr" class="msg"></div>
+  <p><button class="btn" id="send">Send request</button> <button class="btn ghost" onclick="this.closest('dialog').close()">Cancel</button></p>
+</dialog>
+</main>
+<footer id="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>

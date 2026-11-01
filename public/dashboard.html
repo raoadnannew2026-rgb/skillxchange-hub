@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard — Skill Exchange Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+<header id="nav"></header>
+<main>
+<h1 id="hello">Dashboard</h1>
+<div id="smsg" class="msg"></div>
+<div class="grid">
+  <div class="card"><h3>Skills I can teach</h3><div id="offers"></div>
+    <form class="addSkill row" data-kind="offer"><input name="name" placeholder="e.g. Graphic Design" required><button class="btn small">Add</button></form></div>
+  <div class="card"><h3>Skills I want to learn</h3><div id="wants"></div>
+    <form class="addSkill row" data-kind="want"><input name="name" placeholder="e.g. Python" required><button class="btn small">Add</button></form></div>
+</div>
+<p><a class="btn" href="explore.html">Find people to swap with</a></p>
+<h2>Requests for me</h2><div id="incoming" class="grid"></div>
+<h2>Requests I sent</h2><div id="outgoing" class="grid"></div>
+</main>
+<footer id="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>

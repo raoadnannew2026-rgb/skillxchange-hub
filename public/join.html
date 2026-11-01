@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Join — Skill Exchange Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="join">
+<header id="nav"></header>
+<main>
+<h1 style="text-align:center">Join Skill Exchange Hub</h1>
+<form class="card" id="f">
+  <label>Full name</label><input id="name" required>
+  <label>Email</label><input id="email" type="email" required>
+  <label>Password (8+ characters)</label><input id="password" type="password" minlength="8" required>
+  <label>Short bio (optional)</label><textarea id="bio" rows="2" maxlength="200"></textarea>
+  <p><button class="btn">Create account</button></p>
+  <div id="msg" class="msg"></div>
+  <p>Already a member? <a href="login.html">Login</a></p>
+</form>
+</main>
+<footer id="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>

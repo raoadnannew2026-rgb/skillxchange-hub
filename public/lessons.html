@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lessons — Skill Exchange Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="lessons">
+<header id="nav"></header>
+<main>
+<h1>Lessons</h1>
+<form class="card" id="f" style="max-width:none">
+  <h3>Share a lesson</h3>
+  <label>Skill</label><input id="skill" placeholder="e.g. Python" required>
+  <label>Title</label><input id="title" maxlength="100" required>
+  <label>Lesson content</label><textarea id="content" rows="5" required></textarea>
+  <label>Video link (optional, YouTube or any https link)</label><input id="video" placeholder="https://...">
+  <p><button class="btn">Publish lesson</button></p><div id="msg" class="msg"></div>
+</form>
+<h2>All lessons</h2>
+<input id="q" placeholder="Search by title, skill or teacher">
+<div id="list" class="grid"></div>
+</main>
+<footer id="footer"></footer>
+<script src="app.js"></script>
+</body>
+</html>
